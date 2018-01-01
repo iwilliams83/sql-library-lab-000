@@ -33,6 +33,6 @@ end
   #(2, "A Clash of Kings", 1998, 1), (3, "A Storm of Swords", 2000, 1), (4, "First Book", 2002, 2),
   #(5, "Second Book", 2003, 2), (6, "Third Book", 2005, 2);
 def select_character_names_and_number_of_books_they_are_in
-  "SELECT characters.name, COUNT(books) FROM characters INNER JOIN books
+  "SELECT characters.name, COUNT(books.title) FROM characters INNER JOIN books
   ON characters.series_id = books.series_id"
 end
