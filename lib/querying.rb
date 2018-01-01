@@ -3,7 +3,7 @@ def select_books_titles_and_years_in_first_series_order_by_year
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "SELECT name, motto FROM characters ORDER BY len(motto) DESC LIMIT 1"
+  "SELECT name, motto FROM characters ORDER BY length(motto) DESC LIMIT 1"
 end
 #INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (1, "Lady", "Woof Woof", "direwolf", 1, 1),
 #(2, "Tyrion Lannister", "A Lannister always pays his debts", "human", 1, 1),
