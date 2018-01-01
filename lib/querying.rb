@@ -11,9 +11,8 @@ end
 #(5, "Character One", "motto one", "cylon", 2, 2), (6, "Character Two", "motto two", "human", 2, 2),
 #(7, "Character Three", "motto three", "cylon", 2, 2), (8, "Character Four", "motto four", "cylon", 2, 2);
 
-
 def select_value_and_count_of_most_prolific_species
-  "Write your SQL query here"
+  "SELECT species, COUNT(species) FROM characters WHERE species = 'human'"
 end
 
 def select_name_and_series_subgenres_of_authors
